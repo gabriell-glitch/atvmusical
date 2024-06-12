@@ -1,4 +1,4 @@
-console.log("voce gosta de instrumentos musicais?");
+console.log("voce toca instrumentos musicais?");
 process.stdin.on("data", function (data) {
   let resposta = data.toString().trim().toLowerCase();
   if (resposta === "sim" || resposta === "s") {
