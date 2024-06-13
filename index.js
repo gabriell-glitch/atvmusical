@@ -3,12 +3,14 @@ process.stdin.on("data", function (data) {
   let resposta = data.toString().trim().toLowerCase();
   if (resposta === "sim" || resposta === "s") {
     console.log("bacana");
-    process.exit();
+    console.log("qual?");
   } else if (resposta === "não" || resposta === "n" || resposta === "nao") {
     console.log("que pena");
-    process.exit();
+  } else if (resposta === "guitarra") {
+    console.log("interessante");
+  } else if (resposta === "violão") {
+    console.log("legal");
   } else {
-    console.log("ok");
-    process.exit();
+    console.log("?");
   }
 });
